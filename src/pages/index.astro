@@ -1,0 +1,227 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Button from '../components/Button.astro';
+import Card from '../components/Card.astro';
+import ProcessStep from '../components/ProcessStep.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="Kressium - Intermediación Comercial Confiable"
+  description="Conectamos proveedores y compradores con procesos claros y formales. Especialistas en intermediación comercial en hidrocarburos e importación legal."
+>
+  <Header />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section-padding bg-gradient-to-br from-navy-50 to-white">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-navy-800 mb-6 leading-tight">
+            Conectamos proveedores y compradores con procesos claros y formales
+          </h1>
+          <p class="text-xl text-steel-600 mb-8 max-w-3xl mx-auto">
+            Intermediación comercial confiable con enfoque en cumplimiento y transparencia.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button href="/compradores" size="lg">
+              Soy Comprador
+            </Button>
+            <Button href="/proveedores" variant="outline" size="lg">
+              Soy Proveedor
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ¿Qué hacemos? -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-navy-800 mb-4">
+            ¿Qué hacemos?
+          </h2>
+          <p class="text-lg text-steel-600">
+            Facilitamos conexiones comerciales efectivas y seguras
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <Card icon="🤝">
+            <p class="font-semibold text-navy-800 mb-2">Intermediación Comercial</p>
+            <p class="text-sm">Conectamos proveedores calificados con compradores serios, facilitando transacciones comerciales confiables.</p>
+          </Card>
+          <Card icon="✓">
+            <p class="font-semibold text-navy-800 mb-2">Validación Documental</p>
+            <p class="text-sm">Verificamos documentación básica (KYC/KYB) para garantizar formalidad y cumplimiento en cada operación.</p>
+          </Card>
+          <Card icon="📋">
+            <p class="font-semibold text-navy-800 mb-2">Coordinación Comercial</p>
+            <p class="text-sm">Gestionamos términos, volúmenes y trazabilidad documental para asegurar claridad en cada etapa.</p>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cómo Trabajamos (Proceso en 4 pasos) -->
+    <section class="section-padding bg-steel-50">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-navy-800 mb-4">
+            Cómo Trabajamos
+          </h2>
+          <p class="text-lg text-steel-600">
+            Un proceso claro y ordenado en 4 pasos
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-8">
+          <ProcessStep
+            number={1}
+            title="Contacto Inicial"
+            description="Recibimos tu solicitud y entendemos tus necesidades específicas, ya seas comprador o proveedor."
+          />
+          <ProcessStep
+            number={2}
+            title="Validación"
+            description="Verificamos la documentación legal y capacidades de ambas partes para garantizar cumplimiento y seriedad."
+          />
+          <ProcessStep
+            number={3}
+            title="Conexión"
+            description="Facilitamos el contacto entre proveedor y comprador, presentando opciones que cumplen con los requerimientos."
+          />
+          <ProcessStep
+            number={4}
+            title="Seguimiento"
+            description="Acompañamos el proceso comercial asegurando claridad en términos, volúmenes y trazabilidad documental."
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sectores / Alcance -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-navy-800 mb-4">
+            Sectores de Especialización
+          </h2>
+          <p class="text-lg text-steel-600">
+            Experiencia en sectores estratégicos
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <Card>
+            <p class="font-semibold text-navy-800 mb-2">Hidrocarburos</p>
+            <p class="text-sm">Intermediación en combustibles y productos petroleros con apego a normativas vigentes.</p>
+          </Card>
+          <Card>
+            <p class="font-semibold text-navy-800 mb-2">Importación Legal</p>
+            <p class="text-sm">Facilitamos conexiones para importación de productos cumpliendo requisitos aduanales y regulatorios.</p>
+          </Card>
+          <Card>
+            <p class="font-semibold text-navy-800 mb-2">Logística y Almacenamiento</p>
+            <p class="text-sm">Coordinación con aliados especializados para soluciones logísticas integrales.</p>
+          </Card>
+          <Card>
+            <p class="font-semibold text-navy-800 mb-2">Cumplimiento Regulatorio</p>
+            <p class="text-sm">Soporte en procesos de validación aduanal y verificación de cumplimiento normativo.</p>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enfoque en Cumplimiento -->
+    <section class="section-padding bg-navy-800 text-white">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Compromiso con el Cumplimiento
+          </h2>
+          <p class="text-lg text-steel-200 mb-8">
+            En Kressium operamos bajo los más altos estándares de formalidad y transparencia.
+            Cada proceso está diseñado para garantizar cumplimiento normativo y trazabilidad completa.
+          </p>
+          <div class="bg-navy-700 rounded-lg p-6 text-left">
+            <p class="text-sm text-steel-200 italic">
+              <strong>Importante:</strong> Kressium actúa como intermediario comercial y facilitador de contacto entre partes.
+              La disponibilidad, términos y cumplimiento se confirman caso por caso.
+              Kressium no sustituye asesoría legal, fiscal o regulatoria.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo Directivo -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-navy-800 mb-4">
+            Equipo Directivo
+          </h2>
+          <p class="text-lg text-steel-600">
+            Experiencia y profesionalismo a tu servicio
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <Card>
+            <div class="text-center">
+              <div class="w-20 h-20 bg-navy-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span class="text-3xl font-bold text-navy-800">JM</span>
+              </div>
+              <h3 class="text-xl font-semibold text-navy-800">Ing. José Edgar Medina Gómez</h3>
+              <p class="text-steel-600 font-medium mb-2">Director General</p>
+              <a href="tel:2212547254" class="text-navy-800 hover:underline">
+                Tel. (221) 254-7254
+              </a>
+            </div>
+          </Card>
+
+          <Card>
+            <div class="text-center">
+              <div class="w-20 h-20 bg-navy-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span class="text-3xl font-bold text-navy-800">EM</span>
+              </div>
+              <h3 class="text-xl font-semibold text-navy-800">Ing. Evan Sebastián Medina Moreno</h3>
+              <p class="text-steel-600 font-medium mb-2">Gerente de Planeación y Finanzas</p>
+              <a href="tel:2226611039" class="text-navy-800 hover:underline">
+                Tel. (222) 661-1039
+              </a>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="section-padding bg-gradient-to-br from-steel-50 to-navy-50">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-navy-800 mb-4">
+            ¿Listo para comenzar?
+          </h2>
+          <p class="text-lg text-steel-600 mb-8">
+            Contáctanos hoy y descubre cómo podemos ayudarte a conectar con las oportunidades que buscas.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button href="/contacto" size="lg">
+              Contáctanos
+            </Button>
+            <Button href="/nosotros" variant="outline" size="lg">
+              Conocer Más
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

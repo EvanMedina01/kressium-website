@@ -1,0 +1,205 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Card from '../components/Card.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="Nosotros - Kressium"
+  description="Conoce más sobre Kressium, nuestro equipo y nuestro compromiso con la intermediación comercial confiable."
+>
+  <Header />
+
+  <main>
+    <!-- Hero -->
+    <section class="section-padding bg-gradient-to-br from-navy-50 to-white">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-navy-800 mb-6">
+            Sobre Kressium
+          </h1>
+          <p class="text-xl text-steel-600">
+            Intermediación comercial con transparencia, cumplimiento y profesionalismo
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Historia -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-navy-800 mb-6 text-center">
+            Nuestra Historia
+          </h2>
+          <div class="prose prose-lg max-w-none text-steel-600">
+            <p class="text-center mb-8">
+              Kressium nace de la necesidad de conectar de manera confiable y formal a proveedores
+              y compradores en sectores estratégicos como hidrocarburos e importación. Entendemos
+              que la clave del éxito en operaciones comerciales complejas está en la transparencia,
+              el cumplimiento normativo y la trazabilidad completa de cada proceso.
+            </p>
+            <p class="text-center">
+              Nuestra misión es facilitar conexiones comerciales efectivas, eliminando la incertidumbre
+              mediante validación documental rigurosa y procesos claros que benefician a todas las partes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Misión, Visión, Valores -->
+    <section class="section-padding bg-steel-50">
+      <div class="container-custom">
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <Card>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-navy-800 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-navy-800 mb-3">Misión</h3>
+              <p class="text-steel-600">
+                Facilitar conexiones comerciales confiables entre proveedores y compradores mediante
+                procesos transparentes, validación rigurosa y cumplimiento normativo integral.
+              </p>
+            </div>
+          </Card>
+
+          <Card>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-navy-800 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-navy-800 mb-3">Visión</h3>
+              <p class="text-steel-600">
+                Ser el referente en intermediación comercial en México, reconocidos por nuestra
+                integridad, profesionalismo y compromiso con el cumplimiento.
+              </p>
+            </div>
+          </Card>
+
+          <Card>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-navy-800 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-navy-800 mb-3">Valores</h3>
+              <p class="text-steel-600">
+                Transparencia, Integridad, Cumplimiento, Profesionalismo y Compromiso
+                con nuestros clientes y partners.
+              </p>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qué significa ser broker -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-3xl font-bold text-navy-800 mb-6 text-center">
+            ¿Qué significa ser intermediario?
+          </h2>
+          <Card class="bg-steel-50">
+            <p class="text-steel-700 leading-relaxed">
+              Como intermediarios comerciales, actuamos como el puente confiable entre proveedores
+              y compradores. No somos proveedores directos ni compradores finales; nuestra función
+              es facilitar el contacto entre ambas partes, verificar la formalidad y capacidades
+              de cada uno, y acompañar el proceso comercial para asegurar claridad y cumplimiento.
+            </p>
+            <p class="text-steel-700 leading-relaxed mt-4">
+              Esto significa que trabajamos para validar documentación, coordinar términos comerciales,
+              y garantizar trazabilidad, pero siempre dentro del marco de intermediación. Cada operación
+              se confirma caso por caso, y nuestro compromiso es con la transparencia y formalidad
+              en cada etapa del proceso.
+            </p>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo -->
+    <section class="section-padding bg-steel-50">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-navy-800 mb-4">
+            Nuestro Equipo
+          </h2>
+          <p class="text-lg text-steel-600">
+            Liderazgo experimentado comprometido con tu éxito
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <Card>
+            <div class="text-center">
+              <div class="w-24 h-24 bg-navy-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span class="text-4xl font-bold text-navy-800">JM</span>
+              </div>
+              <h3 class="text-xl font-semibold text-navy-800 mb-1">
+                Ing. José Edgar Medina Gómez
+              </h3>
+              <p class="text-steel-600 font-medium mb-3">Director General</p>
+              <p class="text-sm text-steel-600 mb-4">
+                Líder con visión estratégica en operaciones comerciales y gestión de proyectos
+                en sectores de energía e importación.
+              </p>
+              <a href="tel:2212547254" class="text-navy-800 hover:underline font-medium">
+                Tel. (221) 254-7254
+              </a>
+            </div>
+          </Card>
+
+          <Card>
+            <div class="text-center">
+              <div class="w-24 h-24 bg-navy-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span class="text-4xl font-bold text-navy-800">EM</span>
+              </div>
+              <h3 class="text-xl font-semibold text-navy-800 mb-1">
+                Ing. Evan Sebastián Medina Moreno
+              </h3>
+              <p class="text-steel-600 font-medium mb-3">Gerente de Planeación y Finanzas</p>
+              <p class="text-sm text-steel-600 mb-4">
+                Especialista en análisis financiero, planeación estratégica y desarrollo
+                de negocios con enfoque en cumplimiento.
+              </p>
+              <a href="tel:2226611039" class="text-navy-800 hover:underline font-medium">
+                Tel. (222) 661-1039
+              </a>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="section-padding bg-navy-800 text-white">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto">
+          <div class="bg-navy-700 rounded-lg p-8">
+            <h3 class="text-xl font-bold mb-4">Aviso Importante</h3>
+            <p class="text-steel-200 text-sm leading-relaxed">
+              Kressium opera como intermediario comercial y facilitador de contacto entre partes.
+              La disponibilidad, términos y cumplimiento de cada operación se confirman caso por caso.
+              Kressium no sustituye asesoría legal, fiscal o regulatoria. Recomendamos que todas
+              las partes cuenten con su propia asesoría especializada para decisiones comerciales
+              y legales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

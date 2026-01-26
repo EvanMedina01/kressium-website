@@ -1,0 +1,307 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Card from '../components/Card.astro';
+import Button from '../components/Button.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="Servicios - Kressium"
+  description="Descubre nuestros servicios de intermediación comercial, validación documental y coordinación comercial con enfoque en cumplimiento."
+>
+  <Header />
+
+  <main>
+    <!-- Hero -->
+    <section class="section-padding bg-gradient-to-br from-navy-50 to-white">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-navy-800 mb-6">
+            Nuestros Servicios
+          </h1>
+          <p class="text-xl text-steel-600">
+            Soluciones integrales de intermediación comercial con enfoque en cumplimiento y transparencia
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios Principales -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="space-y-16">
+          <!-- Intermediación Comercial -->
+          <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-navy-100 rounded-lg mb-4">
+                  <span class="text-3xl">🤝</span>
+                </div>
+                <h2 class="text-3xl font-bold text-navy-800 mb-4">
+                  Intermediación Comercial
+                </h2>
+                <p class="text-steel-600 mb-4 leading-relaxed">
+                  Conectamos proveedores calificados con compradores serios, actuando como el puente
+                  confiable que facilita transacciones comerciales efectivas. Nuestro proceso de match
+                  asegura compatibilidad en términos, volúmenes y capacidades.
+                </p>
+                <ul class="space-y-2 text-steel-600">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-navy-800 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Identificación de oportunidades comerciales</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-navy-800 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Match entre proveedores y compradores</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-navy-800 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Facilitación de contacto inicial</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-navy-800 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Presentación de opciones comparativas</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="bg-steel-50 rounded-lg p-8">
+                <h3 class="font-semibold text-navy-800 mb-4">Sectores atendidos:</h3>
+                <div class="space-y-3">
+                  <div class="bg-white rounded p-3 border border-steel-200">
+                    <p class="font-medium text-navy-800">Hidrocarburos</p>
+                    <p class="text-sm text-steel-600">Combustibles y productos petroleros</p>
+                  </div>
+                  <div class="bg-white rounded p-3 border border-steel-200">
+                    <p class="font-medium text-navy-800">Importación</p>
+                    <p class="text-sm text-steel-600">Productos diversos con cumplimiento aduanal</p>
+                  </div>
+                  <div class="bg-white rounded p-3 border border-steel-200">
+                    <p class="font-medium text-navy-800">Insumos Industriales</p>
+                    <p class="text-sm text-steel-600">Materias primas y suministros</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Validación Documental -->
+          <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+              <div class="order-2 md:order-1 bg-steel-50 rounded-lg p-8">
+                <h3 class="font-semibold text-navy-800 mb-4">Validamos:</h3>
+                <ul class="space-y-3">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-navy-800 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <div>
+                      <p class="font-medium text-navy-800">Documentos legales</p>
+                      <p class="text-sm text-steel-600">Constitutiva, poderes, RFC</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-navy-800 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <div>
+                      <p class="font-medium text-navy-800">Capacidad operativa</p>
+                      <p class="text-sm text-steel-600">Permisos, licencias, certificaciones</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-navy-800 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <div>
+                      <p class="font-medium text-navy-800">Referencias comerciales</p>
+                      <p class="text-sm text-steel-600">Historial y reputación</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="order-1 md:order-2">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-navy-100 rounded-lg mb-4">
+                  <span class="text-3xl">✓</span>
+                </div>
+                <h2 class="text-3xl font-bold text-navy-800 mb-4">
+                  Validación Documental Básica
+                </h2>
+                <p class="text-steel-600 mb-4 leading-relaxed">
+                  Realizamos verificación de documentación esencial (KYC/KYB básico) para garantizar
+                  la formalidad y capacidad de operación de cada parte. Este proceso reduce riesgos
+                  y aumenta la confianza en las transacciones.
+                </p>
+                <p class="text-steel-600 mb-4 leading-relaxed">
+                  <strong class="text-navy-800">Importante:</strong> La validación documental no constituye
+                  auditoría ni asesoría legal. Es un proceso de verificación básica como parte de nuestra
+                  función de intermediación.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coordinación Comercial -->
+          <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-navy-100 rounded-lg mb-4">
+                  <span class="text-3xl">📋</span>
+                </div>
+                <h2 class="text-3xl font-bold text-navy-800 mb-4">
+                  Coordinación Comercial
+                </h2>
+                <p class="text-steel-600 mb-4 leading-relaxed">
+                  Gestionamos términos comerciales, volúmenes y trazabilidad documental para asegurar
+                  claridad y transparencia en cada etapa del proceso. Actuamos como facilitadores
+                  que mantienen la comunicación fluida entre las partes.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="bg-steel-50 rounded-lg p-4">
+                    <p class="font-semibold text-navy-800 mb-1">Términos</p>
+                    <p class="text-sm text-steel-600">Incoterms, formas de pago</p>
+                  </div>
+                  <div class="bg-steel-50 rounded-lg p-4">
+                    <p class="font-semibold text-navy-800 mb-1">Volúmenes</p>
+                    <p class="text-sm text-steel-600">Cantidades, entregas</p>
+                  </div>
+                  <div class="bg-steel-50 rounded-lg p-4">
+                    <p class="font-semibold text-navy-800 mb-1">Tiempos</p>
+                    <p class="text-sm text-steel-600">Plazos, programación</p>
+                  </div>
+                  <div class="bg-steel-50 rounded-lg p-4">
+                    <p class="font-semibold text-navy-800 mb-1">Trazabilidad</p>
+                    <p class="text-sm text-steel-600">Documentación completa</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-navy-800 text-white rounded-lg p-8">
+                <h3 class="font-semibold mb-4">Nuestro compromiso:</h3>
+                <ul class="space-y-3 text-steel-200">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Transparencia total en cada etapa</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Comunicación clara y oportuna</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Documentación ordenada y accesible</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Seguimiento continuo del proceso</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soporte Logístico -->
+          <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+              <div class="order-2 md:order-1">
+                <Card class="bg-steel-50">
+                  <h3 class="font-semibold text-navy-800 mb-4">Aliados estratégicos:</h3>
+                  <div class="space-y-3">
+                    <div class="flex items-start">
+                      <span class="text-2xl mr-3">🚚</span>
+                      <div>
+                        <p class="font-medium text-navy-800">Logística</p>
+                        <p class="text-sm text-steel-600">Transporte terrestre especializado</p>
+                      </div>
+                    </div>
+                    <div class="flex items-start">
+                      <span class="text-2xl mr-3">🏭</span>
+                      <div>
+                        <p class="font-medium text-navy-800">Almacenamiento</p>
+                        <p class="text-sm text-steel-600">Instalaciones certificadas</p>
+                      </div>
+                    </div>
+                    <div class="flex items-start">
+                      <span class="text-2xl mr-3">📦</span>
+                      <div>
+                        <p class="font-medium text-navy-800">Aduanas</p>
+                        <p class="text-sm text-steel-600">Agentes aduanales certificados</p>
+                      </div>
+                    </div>
+                    <div class="flex items-start">
+                      <span class="text-2xl mr-3">🔬</span>
+                      <div>
+                        <p class="font-medium text-navy-800">Laboratorio</p>
+                        <p class="text-sm text-steel-600">Análisis y certificaciones</p>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+              </div>
+              <div class="order-1 md:order-2">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-navy-100 rounded-lg mb-4">
+                  <span class="text-3xl">🌐</span>
+                </div>
+                <h2 class="text-3xl font-bold text-navy-800 mb-4">
+                  Soporte de Logística y Aduanas
+                </h2>
+                <p class="text-steel-600 mb-4 leading-relaxed">
+                  Facilitamos el acceso a aliados especializados en logística, almacenamiento,
+                  servicios aduanales y análisis de laboratorio cuando el proceso comercial
+                  lo requiere.
+                </p>
+                <p class="text-steel-600 mb-4 leading-relaxed">
+                  Trabajamos con partners certificados que comparten nuestro compromiso con
+                  la calidad, cumplimiento y transparencia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-padding bg-gradient-to-br from-navy-50 to-steel-50">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-navy-800 mb-4">
+            ¿Necesitas más información?
+          </h2>
+          <p class="text-lg text-steel-600 mb-8">
+            Contáctanos para conocer cómo nuestros servicios pueden ayudarte
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button href="/contacto" size="lg">
+              Contáctanos
+            </Button>
+            <Button href="/compradores" variant="outline" size="lg">
+              Soy Comprador
+            </Button>
+            <Button href="/proveedores" variant="outline" size="lg">
+              Soy Proveedor
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

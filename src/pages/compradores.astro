@@ -1,0 +1,445 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Card from '../components/Card.astro';
+import Button from '../components/Button.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="Para Compradores - Kressium"
+  description="Encuentra proveedores confiables para tu negocio. Validación documental, opciones comparativas y procesos claros."
+>
+  <Header />
+
+  <main>
+    <!-- Hero -->
+    <section class="section-padding bg-gradient-to-br from-navy-50 to-white">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-navy-800 mb-6">
+            Soluciones para Compradores
+          </h1>
+          <p class="text-xl text-steel-600 mb-8">
+            Accede a proveedores validados y confiables para tus necesidades de negocio
+          </p>
+          <Button href="#formulario" size="lg">
+            Solicitar Información
+          </Button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-navy-800 mb-4">
+            ¿Por qué trabajar con nosotros?
+          </h2>
+          <p class="text-lg text-steel-600">
+            Facilitamos tu búsqueda de proveedores confiables
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <Card icon="🔍">
+            <h3 class="font-semibold text-navy-800 mb-2">Proveedores Validados</h3>
+            <p class="text-sm">
+              Verificamos documentación legal, capacidades operativas y referencias
+              de cada proveedor antes de presentarte opciones.
+            </p>
+          </Card>
+
+          <Card icon="📊">
+            <h3 class="font-semibold text-navy-800 mb-2">Opciones Comparativas</h3>
+            <p class="text-sm">
+              Recibe propuestas de múltiples proveedores calificados para que
+              puedas elegir la mejor opción para tu negocio.
+            </p>
+          </Card>
+
+          <Card icon="🛡️">
+            <h3 class="font-semibold text-navy-800 mb-2">Proceso Seguro</h3>
+            <p class="text-sm">
+              Trazabilidad documental completa, términos claros y seguimiento
+              continuo en cada etapa de la operación.
+            </p>
+          </Card>
+
+          <Card icon="⚡">
+            <h3 class="font-semibold text-navy-800 mb-2">Respuesta Rápida</h3>
+            <p class="text-sm">
+              Evaluamos tu solicitud y te presentamos opciones en tiempos
+              competitivos para no detener tu operación.
+            </p>
+          </Card>
+
+          <Card icon="💼">
+            <h3 class="font-semibold text-navy-800 mb-2">Profesionalismo</h3>
+            <p class="text-sm">
+              Equipo experimentado en comercio internacional, logística
+              y cumplimiento normativo.
+            </p>
+          </Card>
+
+          <Card icon="📞">
+            <h3 class="font-semibold text-navy-800 mb-2">Acompañamiento</h3>
+            <p class="text-sm">
+              Soporte continuo desde el primer contacto hasta el cierre
+              exitoso de la operación.
+            </p>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    <!-- ¿Qué información pedimos? -->
+    <section class="section-padding bg-steel-50">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-navy-800 mb-8 text-center">
+            ¿Qué información necesitamos?
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <Card>
+              <h3 class="font-semibold text-navy-800 mb-3">Información de tu empresa</h3>
+              <ul class="space-y-2 text-sm text-steel-600">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-navy-800 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Razón social y contacto</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-navy-800 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Giro comercial</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-navy-800 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Ubicación y destino de mercancía</span>
+                </li>
+              </ul>
+            </Card>
+
+            <Card>
+              <h3 class="font-semibold text-navy-800 mb-3">Requerimientos del producto</h3>
+              <ul class="space-y-2 text-sm text-steel-600">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-navy-800 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Descripción del producto</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-navy-800 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Volumen aproximado</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-navy-800 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Frecuencia de compra</span>
+                </li>
+              </ul>
+            </Card>
+
+            <Card>
+              <h3 class="font-semibold text-navy-800 mb-3">Términos comerciales</h3>
+              <ul class="space-y-2 text-sm text-steel-600">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-navy-800 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Incoterm preferido</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-navy-800 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Forma de pago</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-navy-800 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Plazos requeridos</span>
+                </li>
+              </ul>
+            </Card>
+
+            <Card>
+              <h3 class="font-semibold text-navy-800 mb-3">Requerimientos especiales</h3>
+              <ul class="space-y-2 text-sm text-steel-600">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-navy-800 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Certificaciones necesarias</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-navy-800 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Normativas específicas</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-navy-800 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Servicios logísticos requeridos</span>
+                </li>
+              </ul>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ¿Qué entregamos? -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-navy-800 mb-8 text-center">
+            ¿Qué entregamos?
+          </h2>
+
+          <div class="space-y-6">
+            <Card>
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mr-4">
+                  <span class="text-2xl font-bold text-navy-800">1</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-navy-800 mb-2">Opciones de Proveedores</h3>
+                  <p class="text-steel-600">
+                    Presentamos 2-3 proveedores validados que cumplan con tus requerimientos,
+                    con información comparativa de capacidades, términos y tiempos.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card>
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mr-4">
+                  <span class="text-2xl font-bold text-navy-800">2</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-navy-800 mb-2">Validación Documental</h3>
+                  <p class="text-steel-600">
+                    Confirmamos que cada proveedor cuenta con la documentación legal necesaria,
+                    permisos vigentes y capacidad operativa comprobada.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card>
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mr-4">
+                  <span class="text-2xl font-bold text-navy-800">3</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-navy-800 mb-2">Coordinación y Seguimiento</h3>
+                  <p class="text-steel-600">
+                    Facilitamos la comunicación entre tu empresa y los proveedores, coordinamos
+                    términos comerciales y damos seguimiento hasta el cierre de la operación.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card>
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mr-4">
+                  <span class="text-2xl font-bold text-navy-800">4</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-navy-800 mb-2">Transparencia en Tiempos</h3>
+                  <p class="text-steel-600">
+                    Te informamos tiempos estimados de entrega, disponibilidad real y cualquier
+                    consideración relevante para tu decisión.
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario -->
+    <section id="formulario" class="section-padding bg-gradient-to-br from-navy-800 to-navy-900 text-white">
+      <div class="container-custom">
+        <div class="max-w-2xl mx-auto">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Solicita Información
+            </h2>
+            <p class="text-steel-200">
+              Completa el formulario y nos pondremos en contacto contigo
+            </p>
+          </div>
+
+          <Card class="bg-white">
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label for="nombre" class="block text-sm font-medium text-steel-700 mb-1">
+                    Nombre Completo *
+                  </label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                    class="w-full px-4 py-2 border border-steel-300 rounded-md focus:ring-2 focus:ring-navy-500 focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <label for="puesto" class="block text-sm font-medium text-steel-700 mb-1">
+                    Puesto
+                  </label>
+                  <input
+                    type="text"
+                    id="puesto"
+                    name="puesto"
+                    class="w-full px-4 py-2 border border-steel-300 rounded-md focus:ring-2 focus:ring-navy-500 focus:border-transparent"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="empresa" class="block text-sm font-medium text-steel-700 mb-1">
+                  Empresa *
+                </label>
+                <input
+                  type="text"
+                  id="empresa"
+                  name="empresa"
+                  required
+                  class="w-full px-4 py-2 border border-steel-300 rounded-md focus:ring-2 focus:ring-navy-500 focus:border-transparent"
+                />
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label for="email" class="block text-sm font-medium text-steel-700 mb-1">
+                    Email *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full px-4 py-2 border border-steel-300 rounded-md focus:ring-2 focus:ring-navy-500 focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <label for="telefono" class="block text-sm font-medium text-steel-700 mb-1">
+                    Teléfono *
+                  </label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    required
+                    class="w-full px-4 py-2 border border-steel-300 rounded-md focus:ring-2 focus:ring-navy-500 focus:border-transparent"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="producto" class="block text-sm font-medium text-steel-700 mb-1">
+                  Producto que necesitas *
+                </label>
+                <select
+                  id="producto"
+                  name="producto"
+                  required
+                  class="w-full px-4 py-2 border border-steel-300 rounded-md focus:ring-2 focus:ring-navy-500 focus:border-transparent"
+                >
+                  <option value="">Selecciona una opción</option>
+                  <option value="hidrocarburos">Hidrocarburos / Combustibles</option>
+                  <option value="importacion">Importación</option>
+                  <option value="insumos">Insumos Industriales</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label for="volumen" class="block text-sm font-medium text-steel-700 mb-1">
+                    Volumen aproximado
+                  </label>
+                  <input
+                    type="text"
+                    id="volumen"
+                    name="volumen"
+                    placeholder="Ej: 10,000 litros/mes"
+                    class="w-full px-4 py-2 border border-steel-300 rounded-md focus:ring-2 focus:ring-navy-500 focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <label for="ubicacion" class="block text-sm font-medium text-steel-700 mb-1">
+                    Ubicación destino
+                  </label>
+                  <input
+                    type="text"
+                    id="ubicacion"
+                    name="ubicacion"
+                    placeholder="Ciudad, Estado"
+                    class="w-full px-4 py-2 border border-steel-300 rounded-md focus:ring-2 focus:ring-navy-500 focus:border-transparent"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="mensaje" class="block text-sm font-medium text-steel-700 mb-1">
+                  Mensaje / Requerimientos adicionales
+                </label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  rows="4"
+                  class="w-full px-4 py-2 border border-steel-300 rounded-md focus:ring-2 focus:ring-navy-500 focus:border-transparent"
+                  placeholder="Describe tus necesidades específicas..."
+                ></textarea>
+              </div>
+
+              <div class="text-center pt-4">
+                <Button type="submit" size="lg" class="w-full md:w-auto">
+                  Enviar Solicitud
+                </Button>
+              </div>
+
+              <p class="text-xs text-steel-600 text-center mt-4">
+                Al enviar este formulario aceptas nuestro <a href="/privacidad" class="text-navy-800 hover:underline">Aviso de Privacidad</a>
+              </p>
+            </form>
+          </Card>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  // Form handling will be added with backend integration
+  const form = document.querySelector('form');
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Función de formulario será implementada. Por ahora, contáctanos directamente.');
+  });
+</script>

@@ -1,0 +1,87 @@
+---
+const navItems = [
+  { name: 'Inicio', href: '/' },
+  { name: 'Nosotros', href: '/nosotros' },
+  { name: 'Servicios', href: '/servicios' },
+  { name: 'Para Compradores', href: '/compradores' },
+  { name: 'Para Proveedores', href: '/proveedores' },
+  { name: 'Contacto', href: '/contacto' },
+];
+---
+
+<header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-steel-200 z-50">
+  <nav class="container-custom py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-3">
+        <img src="/logo.png" alt="Kressium Logo" class="h-12 w-auto" />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:flex items-center space-x-8">
+        {navItems.map((item) => (
+          <a
+            href={item.href}
+            class="text-steel-600 hover:text-navy-800 transition-colors font-medium"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+
+      <!-- CTA Button -->
+      <div class="hidden lg:block">
+        <a
+          href="/contacto"
+          class="bg-navy-800 text-white px-6 py-2.5 rounded-md hover:bg-navy-700 transition-colors font-medium"
+        >
+          Contáctanos
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-button"
+        class="lg:hidden p-2 text-steel-600 hover:text-navy-800"
+        aria-label="Abrir menú"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden pt-4 pb-2">
+      <div class="flex flex-col space-y-3">
+        {navItems.map((item) => (
+          <a
+            href={item.href}
+            class="text-steel-600 hover:text-navy-800 transition-colors font-medium py-2"
+          >
+            {item.name}
+          </a>
+        ))}
+        <a
+          href="/contacto"
+          class="bg-navy-800 text-white px-6 py-2.5 rounded-md hover:bg-navy-700 transition-colors font-medium text-center mt-2"
+        >
+          Contáctanos
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>
+
+<!-- Add padding to body to account for fixed header -->
+<div class="h-20"></div>

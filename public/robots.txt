@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kressium.com/sitemap-index.xml
