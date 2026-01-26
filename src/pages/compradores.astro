@@ -291,7 +291,8 @@ import '../styles/global.css';
           </div>
 
           <Card class="bg-white">
-            <form class="space-y-4">
+            <form action="https://formspree.io/f/xdagdvnp" method="POST" class="space-y-4">
+              <input type="hidden" name="_form_type" value="comprador" />
               <div class="grid md:grid-cols-2 gap-4">
                 <div>
                   <label for="nombre" class="block text-sm font-medium text-steel-700 mb-1">
@@ -435,11 +436,3 @@ import '../styles/global.css';
   <Footer />
 </BaseLayout>
 
-<script>
-  // Form handling will be added with backend integration
-  const form = document.querySelector('form');
-  form?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Función de formulario será implementada. Por ahora, contáctanos directamente.');
-  });
-</script>
