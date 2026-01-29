@@ -16,20 +16,29 @@ import '../styles/global.css';
 
   <main>
     <!-- Hero Section -->
-    <section class="section-padding bg-gradient-to-br from-navy-50 to-white">
-      <div class="container-custom">
+    <section class="relative min-h-[600px] flex items-center overflow-hidden">
+      <!-- Slideshow Background -->
+      <div class="absolute inset-0">
+        <img src="/fotos/foto1.png" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000" />
+        <img src="/fotos/foto2.png" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+        <img src="/fotos/foto3.png" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+        <div class="absolute inset-0 bg-navy-900/70"></div>
+      </div>
+
+      <!-- Content -->
+      <div class="container-custom relative z-10 py-20">
         <div class="max-w-4xl mx-auto text-center">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-navy-800 mb-6 leading-tight">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Conectamos proveedores y compradores con procesos claros y formales
           </h1>
-          <p class="text-xl text-steel-600 mb-8 max-w-3xl mx-auto">
+          <p class="text-xl text-steel-200 mb-8 max-w-3xl mx-auto">
             Intermediación comercial confiable con enfoque en cumplimiento y transparencia.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/compradores" size="lg">
               Soy Comprador
             </Button>
-            <Button href="/proveedores" variant="outline" size="lg">
+            <Button href="/proveedores" variant="outline" size="lg" class="border-white text-white hover:bg-white/10">
               Soy Proveedor
             </Button>
           </div>
@@ -233,3 +242,16 @@ import '../styles/global.css';
 
   <Footer />
 </BaseLayout>
+
+<script>
+  const slides = document.querySelectorAll('.hero-slide');
+  let current = 0;
+
+  setInterval(() => {
+    slides[current].classList.remove('opacity-100');
+    slides[current].classList.add('opacity-0');
+    current = (current + 1) % slides.length;
+    slides[current].classList.remove('opacity-0');
+    slides[current].classList.add('opacity-100');
+  }, 5000);
+</script>
